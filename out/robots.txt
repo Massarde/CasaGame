@@ -1,0 +1,8 @@
+# *
+User-agent: *
+
+# Host
+Host: http://casagame.com
+
+# Sitemaps
+Sitemap: http://casagame.com/sitemap.xml

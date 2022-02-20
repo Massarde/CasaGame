@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400;600&display=swap");
+.loaderContainer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid #cacaca;
+  border-radius: 50%;
+  border-top: 5px solid #054889;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 0.8s linear infinite;
+  /* Safari */
+  animation: spin 0.8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.SLUG_CONTAINER {
+  color: #222222;
+  width: 95%;
+  max-width: 800px;
+  margin: 2rem auto;
+  min-height: 80vh;
+  padding: 2rem 2rem 3rem;
+  background-color: #d1d1d1;
+}
+
+@media (max-width: 768px) {
+  .SLUG_CONTAINER {
+    padding: 1rem 1rem 1.5rem;
+  }
+}
+
+.SLUG_CONTAINER h1 {
+  margin: 1em 0px;
+  font-size: clamp(1.3em, 6vw, 3em);
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.SLUG_CONTAINER .head_text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #131313;
+  font-size: clamp(1em, 4vw, 1.5em);
+  line-height: 30px;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .SLUG_CONTAINER .head_text {
+    line-height: 1.4em;
+  }
+}
+
+.SLUG_CONTAINER .image_container {
+  max-width: 300px;
+  border: 2px solid #a8a8a8;
+  float: left;
+  shape-outside: image(50%);
+  margin-right: 1rem;
+  -webkit-box-shadow: 2px 2px 2px #6b6b6b;
+          box-shadow: 2px 2px 2px #6b6b6b;
+}
+
+.SLUG_CONTAINER .text {
+  text-align: start;
+}
+
+.link_back {
+  color: white;
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.link_back .icon {
+  margin-bottom: -0.2rem;
+}
+
+.NEWS_CONTAINER {
+  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto;
+  min-height: 80vh;
+  color: #d8d6d6;
+  padding: 0px 1rem;
+}
+
+.NEWS_CONTAINER .head_text {
+  font-size: 3em;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .NEWS_CONTAINER .head_text {
+    font-size: 1.2rem;
+    font-size: clamp(1.3rem, 6vw, 2.5rem);
+  }
+}
+
+.NEWS_CONTAINER .date {
+  margin-top: 0.2rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.NEWS_CONTAINER .image_container {
+  margin-top: 2rem;
+  border: 5px solid white;
+  -webkit-box-shadow: 4px 4px 2px #161616;
+          box-shadow: 4px 4px 2px #161616;
+}
+
+.NEWS_CONTAINER .title {
+  color: white;
+  font-size: clamp(1.1rem, 6vw, 2rem);
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.NEWS_CONTAINER .content {
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Serif", serif;
+  font-size: clamp(1em, 3vw, 1.2rem);
+  letter-spacing: 0.3px;
+}
+
+.NEWS_CONTAINER h2 {
+  margin-top: 2em;
+}
+
+.NEWS_CONTAINER .icon_container {
+  margin-top: 2rem;
+  font-size: 1.5em;
+}
+
+.loadingPages {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 2000;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid #cacaca;
+  border-radius: 50%;
+  border-top: 5px solid #054889;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 0.8s linear infinite;
+  /* Safari */
+  animation: spin 0.8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.module.css.map */

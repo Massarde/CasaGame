@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400;600&display=swap");
+.mainContainer {
+  line-height: 22px;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2em 5%;
+  color: #a7a6a6;
+  background-color: black;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.mainContainer h2 {
+  font-size: 2em;
+  color: #f1f1f1;
+}
+
+.mainContainer .archive {
+  max-width: 400px;
+  width: 100%;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .mainContainer .archive {
+    max-width: 500px;
+  }
+}
+
+.mainContainer .archive h2 {
+  margin-bottom: 0.5em;
+}
+
+.mainContainer .archive ul li {
+  padding: 0.3em 0px;
+  border-bottom: 1px solid #a7a6a6;
+  cursor: pointer;
+}
+
+.mainContainer .archive ul li:hover {
+  color: white;
+}
+
+.mainContainer .newsletter {
+  max-width: 400px;
+  width: 100%;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .mainContainer .newsletter {
+    margin-top: 2em;
+  }
+}
+
+.mainContainer .newsletter h2 {
+  margin-bottom: 0.5em;
+}
+
+.mainContainer .newsletter p {
+  margin-bottom: 1em;
+}
+
+.mainContainer .newsletter .btn {
+  color: white;
+  background-color: #054889;
+  display: inline;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.mainContainer .newsletter .btn:hover {
+  background-color: #0344db;
+}
+
+.mainContainer .newsletter ::-webkit-input-placeholder {
+  color: #a7a6a6;
+  font-size: 1.1em;
+}
+
+.mainContainer .newsletter :-ms-input-placeholder {
+  color: #a7a6a6;
+  font-size: 1.1em;
+}
+
+.mainContainer .newsletter ::-ms-input-placeholder {
+  color: #a7a6a6;
+  font-size: 1.1em;
+}
+
+.mainContainer .newsletter ::placeholder {
+  color: #a7a6a6;
+  font-size: 1.1em;
+}
+
+.mainContainer .newsletter .inputContainer {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.mainContainer .newsletter .inputContainer .icon {
+  font-size: 1.5em;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: #a7a6a6;
+}
+
+.mainContainer .newsletter .inputContainer input {
+  width: 85%;
+  margin: auto;
+  padding: 0.4em 0.5em 0.3em 2.5em;
+  color: #dfdfdf;
+  font-size: 1.1em;
+  background-color: #383838;
+}
+
+.mainContainer .newsletter .inputContainer input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.mainContainer .newsletter .inputContainer input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.mainContainer .newsletter .inputContainer input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.mainContainer .newsletter .inputContainer input:focus::placeholder {
+  color: transparent;
+}
+
+.mainContainer .comments {
+  max-width: 400px;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .mainContainer .comments {
+    margin-top: 2em;
+  }
+}
+
+.mainContainer .comments h2 {
+  margin-bottom: 1em;
+  text-align: start;
+}
+
+.mainContainer .comments .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: start;
+  gap: 1em;
+}
+
+.mainContainer .comments .container .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0.2em;
+  border: 1px solid #919191;
+  margin-top: 0.7em;
+}
+
+.mainContainer .comments .container .text p:nth-child(1) {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.mainContainer .comments .container .text p:nth-child(2) {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.mainContainer .comments .containerTwo {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #a7a6a6;
+}
+
+.mainContainer .blocks {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  width: 320px;
+  -ms-grid-columns: (minmax(130px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.mainContainer .blocks .adSpot {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #919191;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=index.module.css.map */

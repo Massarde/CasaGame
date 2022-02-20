@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400;600&display=swap");
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #054889;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.mainContainer .codeInfo {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#141414));
+  background-image: linear-gradient(#222222, #141414);
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.mainContainer .codeInfo .iconContainer {
+  text-align: end;
+  width: 10%;
+}
+
+.mainContainer .codeInfo .iconContainer .homeIcon {
+  font-size: 1.5em;
+  color: #919191;
+}
+
+.mainContainer .codeInfo .iconContainer .homeIcon:hover {
+  color: white;
+}
+
+.mainContainer .codeInfo .codesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 0.5em 0 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-left: 2px solid #0a0a0a;
+  -webkit-box-shadow: -1px 0px 0px #383838;
+          box-shadow: -1px 0px 0px #383838;
+  padding: 0.7em 0;
+}
+
+.mainContainer .codeInfo .codesContainer li {
+  padding: 0 1em;
+  color: #919191;
+  cursor: pointer;
+}
+
+.mainContainer .codeInfo .codesContainer li:hover {
+  color: white;
+}
+
+.mainContainer .codeInfo .tmBootContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-left: 2px solid #0a0a0a;
+  -webkit-box-shadow: -1px 0px 0px #383838;
+          box-shadow: -1px 0px 0px #383838;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContainer .codeInfo .tmBootContainer li {
+  padding: 0.3em 1em;
+  color: #919191;
+  cursor: pointer;
+}
+
+.mainContainer .codeInfo .tmBootContainer li:hover {
+  color: white;
+}
+
+.mainContainer .codeInfo .tmBootContainer :nth-last-child(1) {
+  font-size: 1.4em;
+  color: #0e0e0e;
+  font-weight: 600;
+}
+
+.mainContainer .codeInfo .tmBootContainer :nth-last-child(1):hover {
+  font-size: 1.4em;
+  color: #cacaca;
+}
+
+.mainContainer .hamburgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#141414));
+  background-image: linear-gradient(#222222, #141414);
+  width: 100vw;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.mainContainer .hamburgerMenu .icon_hamburger {
+  color: #a7a6a6;
+  font-size: 1.5em;
+  margin-right: 2em;
+  background-color: black;
+  padding: 0.2em 0.3em 0.1em 0.3em;
+  border-radius: 5px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+}
+
+.mainContainer .hamburgerMenu .icon_hamburger:hover {
+  background-color: #131212;
+  color: white;
+}
+
+.mainContainer .hamburgerMenu .bootstrap {
+  font-size: 1.4em;
+  color: #0e0e0e;
+  font-weight: 600;
+  text-align: start;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.mainContainer .hamburgerMenu .bootstrap:hover {
+  font-size: 1.4em;
+  color: #cacaca;
+}
+
+.mainContainer .hamburgerMenuOpen {
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContainer .hamburgerMenuOpen .icon_hamburger {
+  margin-top: 0.3em;
+}
+
+.mainContainer .hamburgerMenuOpen .codesContainer {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: start;
+}
+
+.mainContainer .hamburgerMenuOpen .codesContainer li {
+  padding: 0.5em;
+  padding-left: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  color: #d4d4d4;
+}
+
+.mainContainer .hamburgerMenuOpen .codesContainer li:hover {
+  background-color: #272727;
+}
+
+.mainContainer .logReg {
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 18px 8px, radial-gradient(rgba(243, 243, 243, 0.034) 15%, transparent 20%) 0 1px, radial-gradient(rgba(177, 169, 169, 0.041) 15%, transparent 20%) 8px 9px;
+  background-color: #111111;
+  background-size: 6px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-top: 1px solid #0a0a0a;
+}
+
+@media (max-width: 768px) {
+  .mainContainer .logReg {
+    display: none;
+  }
+}
+
+.mainContainer .logReg .lgContainer {
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.mainContainer .logReg .lgContainer li {
+  border-left: 2px solid #0a0a0a;
+  -webkit-box-shadow: -1px 0px 0px #383838;
+          box-shadow: -1px 0px 0px #383838;
+  padding: 0.4em 0.6em;
+  color: #919191;
+  cursor: pointer;
+}
+
+.mainContainer .logReg .lgContainer li:hover {
+  color: white;
+}
+
+.mainContainer .logReg .lgContainer :nth-last-child(1) {
+  height: 34px;
+  border-right: 0px solid black;
+  border-top: 0px solid black;
+  padding: 0px;
+}
+
+.mainContainer .logReg .smContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+  height: 33px;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .mainContainer .logReg .smContainer {
+    position: absolute;
+    right: 5%;
+  }
+}
+
+.mainContainer .logReg .smContainer li {
+  padding: 0.2em 0.34em;
+  font-size: 1.3em;
+  border-right: 2px solid #0a0a0a;
+  -webkit-box-shadow: -1px 0px 0px #383838;
+          box-shadow: -1px 0px 0px #383838;
+  color: #a7a6a6;
+  cursor: pointer;
+}
+
+.mainContainer .logReg .smContainer li:hover {
+  color: white;
+}
+
+.mainContainer .logReg .smContainer li:nth-child(3) {
+  font-size: 1.8em;
+}
+
+.mainContainer .logReg .smContainer li:nth-child(4) {
+  border-right: 0px solid #0a0a0a;
+}
+
+.mainContainer .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em 0em;
+}
+
+@media (max-width: 768px) {
+  .mainContainer .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .mainContainer .navLinks .gamesLinks {
+    width: 100%;
+    text-align: start;
+    padding-left: 2em;
+  }
+}
+
+.mainContainer .navLinks .gamesLinks li:nth-child(1) {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.mainContainer .navLinks .gamesLinks li:nth-child(2) {
+  margin-top: -0.3em;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+  text-align: start;
+  padding-left: 0.6em;
+  color: #ffb406;
+}
+
+.mainContainer .navLinks .navBarLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 0.8em;
+}
+
+.mainContainer .navLinks .navBarLinks li {
+  padding: 0 0.5em;
+  border-left: 2px solid #335dac;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.mainContainer .navLinks .navBarLinks li:hover {
+  text-shadow: 1px 3px #2f2f2f;
+}
+
+.mainContainer .navLinks .navBarLinks li:nth-child(1) {
+  border-left: 0px solid #335dac;
+}
+
+.mainContainer .navLinks .navBarLinks .isSelected {
+  color: #ffb406;
+}
+
+.mainContainer .navLinks .openMenu {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.918);
+  color: #292929;
+  width: 95%;
+  max-width: 800px;
+  height: 2em;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: 1px solid #333333;
+  margin: 1em;
+}
+
+.mainContainer .navLinks .openMenu .arrowIcon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 1.3em;
+}
+
+.mainContainer .navLinks .openMenu .dropDown {
+  position: absolute;
+  border-radius: 5px;
+  top: 30px;
+  background-color: rgba(255, 255, 255, 0.918);
+  width: 100%;
+  height: 150px;
+  z-index: 1000;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContainer .navLinks .openMenu .dropDown .links {
+  width: 100px;
+  margin-bottom: 0.2em;
+  font-size: 0.8em;
+  border-bottom: 1px solid #555555;
+  width: 100%;
+  text-align: start;
+  padding: 0.3em;
+}
+
+.mainContainer .navLinks .openMenu .dropDown .links:hover {
+  font-weight: 600;
+  background-color: #dfdfdf;
+}
+
+.mainContainer .navLinks .openMenu .dropDown div:nth-child(5) {
+  border: none;
+}
+/*# sourceMappingURL=index.module.css.map */

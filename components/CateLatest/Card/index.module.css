@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400;600&display=swap");
+.MAIN_CONTAINER {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  line-height: 21px;
+}
+
+.MAIN_CONTAINER .img {
+  border: 3px solid black;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+.MAIN_CONTAINER .name {
+  text-align: start;
+  padding-left: 0.1em;
+  color: #f0f0f0;
+  font-size: 1.5em;
+}
+
+.MAIN_CONTAINER .text {
+  text-align: start;
+  padding: 0.5em 0.5em 1em 0.5em;
+}
+
+.MAIN_CONTAINER .spanText {
+  color: #0084ff;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.MAIN_CONTAINER .spanText:hover {
+  color: #31abfd;
+}
+
+.MAIN_CONTAINER span {
+  color: #006eff;
+  display: block;
+}
+/*# sourceMappingURL=index.module.css.map */

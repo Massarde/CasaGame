@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400;600&display=swap");
+.MAIN_CONTAINER {
+  font-family: "IBM Plex Serif", serif;
+  line-height: 23px;
+  color: #a7a6a6;
+  width: 95%;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.MAIN_CONTAINER h2 {
+  color: white;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.2em;
+  font-size: 2.1em;
+}
+
+.MAIN_CONTAINER h4 {
+  font-weight: 600;
+  margin: 1rem 0px;
+}
+
+.MAIN_CONTAINER h4:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+.MAIN_CONTAINER .links_container {
+  color: white;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 0px 1rem;
+}
+
+.MAIN_CONTAINER .links_container .game_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.MAIN_CONTAINER .links_container .game_links li {
+  font-size: 0.9em;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.MAIN_CONTAINER .links_container .game_links li:hover {
+  color: #006eff;
+}
+
+.MAIN_CONTAINER .console_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+  color: white;
+}
+
+.MAIN_CONTAINER .console_links li {
+  font-size: 0.9em;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.MAIN_CONTAINER .console_links li .icon {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+
+.MAIN_CONTAINER .console_links li:nth-of-type(3) .icon {
+  font-size: 1.4em;
+}
+
+.MAIN_CONTAINER .console_links li:nth-of-type(4) .icon {
+  font-size: 1.4em;
+}
+
+.MAIN_CONTAINER .console_links li:nth-of-type(7) .icon {
+  font-size: 1.5em;
+}
+
+.MAIN_CONTAINER .console_links li:hover {
+  color: #006eff;
+}
+
+.MAIN_CONTAINER .gamesContainer {
+  margin: 2rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(275px, 575px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(275px, 575px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 2024px) and (min-width: 992px) {
+  .MAIN_CONTAINER .gamesContainer {
+    gap: 0.5rem;
+  }
+}
+
+.MAIN_CONTAINER .cardContainer {
+  height: 100%;
+  max-height: 800px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer {
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 2024px) and (min-width: 992px) {
+  .MAIN_CONTAINER .cardContainer .textContainer {
+    position: absolute;
+    z-index: 1000;
+    bottom: -14.7em;
+    width: 100%;
+  }
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .buy_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 2024px) and (min-width: 992px) {
+  .MAIN_CONTAINER .cardContainer .textContainer .buy_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .buy_text P {
+  text-align: start;
+  width: 100%;
+  background-color: rgba(231, 231, 231, 0.904);
+  color: #161616;
+  font-weight: 600;
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 2024px) and (min-width: 992px) {
+  .MAIN_CONTAINER .cardContainer .textContainer .buy_text P {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .buy_text P .icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: -0.7em;
+  margin-left: 0.5em;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info {
+  background-color: rgba(231, 231, 231, 0.904);
+  color: #161616;
+  font-weight: 600;
+  padding: 1em;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info h2 {
+  margin-top: 1em;
+  color: #161616;
+  width: 90%;
+  text-align: start;
+  margin-bottom: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .MAIN_CONTAINER .cardContainer .textContainer .text_info h2 {
+    line-height: 40px;
+    margin-bottom: 0.2em;
+  }
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info p {
+  text-align: start;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info .read_more {
+  padding: 1rem;
+  padding-left: 0px;
+  margin-bottom: -2rem;
+  width: 170px;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info .read_more p {
+  position: relative;
+  z-index: 1000;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info .read_more p .icon {
+  margin-bottom: -0.75rem;
+  padding-left: 0.5rem;
+  font-size: 2em;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info .read_more .fill_bg {
+  height: 60px;
+  width: 0px;
+  left: 0;
+  background-color: #222222;
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info .read_more:hover .fill_bg {
+  width: 200px;
+  background-color: #161616;
+}
+
+.MAIN_CONTAINER .cardContainer .textContainer .text_info .read_more:hover p {
+  color: white;
+}
+
+.MAIN_CONTAINER .cardContainer:hover .textContainer {
+  bottom: 0px;
+}
+/*# sourceMappingURL=index.module.css.map */

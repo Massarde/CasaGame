@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400;600&display=swap");
+.MAIN_CONTAINER {
+  min-height: 80vh;
+  color: #a7a6a6;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+@media (max-width: 1324px) {
+  .MAIN_CONTAINER {
+    width: 95%;
+  }
+}
+
+.MAIN_CONTAINER .map {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: black;
+  padding: 0.3rem;
+  border: 1px solid #313131;
+}
+
+.MAIN_CONTAINER .map .direction {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  color: #008cff;
+  z-index: 100;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.972);
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.MAIN_CONTAINER .map .direction .icon {
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.MAIN_CONTAINER .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .MAIN_CONTAINER .infoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    text-align: start;
+  }
+}
+
+.MAIN_CONTAINER .infoContainer h2 {
+  margin-bottom: 2rem;
+}
+
+.MAIN_CONTAINER .infoContainer ul {
+  margin-bottom: 1rem;
+}
+
+.MAIN_CONTAINER .infoContainer ul li:nth-child(1) {
+  color: #eeeeee;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.MAIN_CONTAINER .infoContainer .form {
+  width: 100%;
+  max-width: 900px;
+}
+
+.MAIN_CONTAINER .infoContainer .form h2 {
+  margin-bottom: 2rem;
+}
+
+.MAIN_CONTAINER .infoContainer .form .form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+  .MAIN_CONTAINER .infoContainer .form .form_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-left: 0.7rem;
+  }
+}
+
+.MAIN_CONTAINER .infoContainer .form .form_container .label_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.MAIN_CONTAINER .infoContainer .form .form_container .label_input label {
+  margin-bottom: 0.5rem;
+}
+
+.MAIN_CONTAINER .infoContainer .form .form_container .label_input input {
+  width: 100%;
+  max-width: 900px;
+  height: 30px;
+  background-color: #222222;
+  border: 1px solid #3a3a3a;
+  padding-left: 0.5rem;
+  color: #f1f1f1;
+}
+
+.MAIN_CONTAINER .infoContainer .form .textarea_container p {
+  font-size: 1.1rem;
+  color: #919191;
+  margin-bottom: 0.5rem;
+}
+
+.MAIN_CONTAINER .infoContainer .form .textarea_container .areaText {
+  width: 100%;
+  max-width: 900px;
+  background-color: #222222;
+  border: 1px solid #3a3a3a;
+  padding: 0.5rem;
+  color: #f1f1f1;
+}
+
+.MAIN_CONTAINER .infoContainer .form .textarea_container button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #0077ff;
+  padding: 0.3rem 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.7rem;
+  border: none;
+  cursor: pointer;
+}
+
+.MAIN_CONTAINER .infoContainer .form .textarea_container button:hover {
+  color: #00b7ff;
+}
+/*# sourceMappingURL=index.module.css.map */
